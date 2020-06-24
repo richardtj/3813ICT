@@ -1,0 +1,19 @@
+{
+  "name": "workshop-01",
+  "version": "1.0.0",
+  "description": "3813ICT - Workshop 01 Tasks 1-2",
+  "main": "index.js",
+  "dependencies": {
+    "hello-world": "^0.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "3813ICT"
+  },
+  "author": "Richard Turner-Jones",
+  "license": "ISC"
+}
