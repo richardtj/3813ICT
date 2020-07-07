@@ -44,5 +44,35 @@ indexedArray.sort((a, b) => { return a - b });
 console.log(indexedArray);
 
 // Task 3
+// Create a javascript object with a key of people and a value that is an 
+// array of 3 objects each with a firstname and lastname.
+let people = {
+    "people": [
+      {
+        "firstname": "Meredith",
+        "lastname": "Bates"
+      },
+      {
+        "firstname": "Katy",
+        "lastname": "Christensen"
+      },
+      {
+        "firstname": "Jeanette",
+        "lastname": "Gonzalez"
+      }
+    ]
+  }
+// Output the object to the console
+console.log(people);
+
+// Convert that object to a JSON string (stingify)
+let peopleString = JSON.stringify(people);
+// Output the string to the console.
+console.log(peopleString);
+
+// Convert the JSON string back into a javascript object (parse)
+let peopleParse = JSON.parse(peopleString);
+// Output the object to the console.
+console.log(peopleParse);
 
 // Task 4
