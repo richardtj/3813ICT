@@ -1,19 +1,48 @@
 
-// Task 1
-console.log("Node is working");
+// Task 2
+console.log("Hello World, Node.js!");
 
 // Task 2
-let myString = "Hello@World, Node.JS Stringsss";
-let badWord = "bad word";
-let mistype = "spwlling";
-console.log(myString + "\n" + badWord + "\n" + mistype);
+// Create and indexed array of 5 numbers
+let indexedArray = [1, 3, 2, 5, 6];
+// Output the array to the console.
+console.log(indexedArray);
+
+// Add a number to the end of the array (push)
+indexedArray.push(4);
+// Output the array to the console
+console.log(indexedArray);
+
+// Add a number to the beginning of the array (unshift)
+indexedArray.unshift(0);
+// Output the array to the console
+console.log(indexedArray);
+
+// Add an item after the 3rd item in the array (splice)
+indexedArray.splice(3, 0, 7)
+// Output the array to the console
+console.log(indexedArray);
+
+// Remove the last number from the array (pop)
+indexedArray.pop()
+// Output the array to the console
+console.log(indexedArray);
+
+// Remove the 2nd number from the array (splice)
+indexedArray.splice(1, 1)
+// Output the array to the console
+console.log(indexedArray);
+
+// Edit the 5th element in the array to have a value of 100
+indexedArray[4] = 100;
+// Output the array to the console
+console.log(indexedArray);
+
+// Sort the array in ascending order (smallest to biggest) (sort)
+indexedArray.sort((a, b) => { return a - b });
+// Output the array to the console
+console.log(indexedArray);
 
 // Task 3
-myString = myString.substr(0, myString.length - 2);
-myString = myString.replace("@", " ");
-console.log(myString + "\n" + badWord + "\n" + mistype);
 
 // Task 4
-badWord = badWord == "bad word" ?  "***" :badWord;
-console.log(myString + "\n" + badWord + "\n" + mistype);
-
