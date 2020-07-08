@@ -1,8 +1,10 @@
 
-// Task 2
+// Task 1 ------------------------------------------------------------------
+
 console.log("Hello World, Node.js!");
 
-// Task 2
+// Task 2 ------------------------------------------------------------------
+
 // Create and indexed array of 5 numbers
 let indexedArray = [1, 3, 2, 5, 6];
 // Output the array to the console.
@@ -43,25 +45,27 @@ indexedArray.sort((a, b) => { return a - b });
 // Output the array to the console
 console.log(indexedArray);
 
-// Task 3
+
+// Task 3 ------------------------------------------------------------------
+
 // Create a javascript object with a key of people and a value that is an 
 // array of 3 objects each with a firstname and lastname.
 let people = {
     "people": [
-      {
-        "firstname": "Meredith",
-        "lastname": "Bates"
-      },
-      {
-        "firstname": "Katy",
-        "lastname": "Christensen"
-      },
-      {
-        "firstname": "Jeanette",
-        "lastname": "Gonzalez"
-      }
+        {
+            "firstname": "Meredith",
+            "lastname": "Bates"
+        },
+        {
+            "firstname": "Katy",
+            "lastname": "Christensen"
+        },
+        {
+            "firstname": "Jeanette",
+            "lastname": "Gonzalez"
+        }
     ]
-  }
+}
 // Output the object to the console
 console.log(people);
 
@@ -75,4 +79,42 @@ let peopleParse = JSON.parse(peopleString);
 // Output the object to the console.
 console.log(peopleParse);
 
-// Task 4
+
+// Task 4 ------------------------------------------------------------------
+
+// Output the sum of numbers in the following array [5,4,3,8]
+// Output should look like “Sum of Array is ??”
+const arrayAdd = require('array-add-num');
+let testArray = [5, 4, 3, 8];
+let testResult = arrayAdd(testArray);
+console.log("Sum of Array is ", testResult);
+
+// Output to the console the value of the array-add-num dependency 
+// that you see in your package.json file.
+
+let json = require("./package.json");
+console.log("array-add-num dependency: ", json.dependencies["array-add-num"]);
+
+
+// Task 5 ------------------------------------------------------------------
+
+// Declarative function
+function multiplyNums(x, y, z) {
+    return "new number is " + x * y * z;
+}
+// Output the result to the console.
+console.log("\nMultiply numbers 2, 3, 5 (Declarative function)\n  ", multiplyNums(2, 3, 5));
+
+// Function expression
+let multiplyNumsV1 = function(x, y, z) {
+    return "new number is " + x * y * z;
+}
+// Output the result to the console.
+console.log("\nMultiply numbers 2, 3, 5 (Function expression)\n  ", multiplyNumsV1(2, 3, 5));
+
+// Arrow function
+let multiplyNumsV2 = (x, y, z) => {
+    return "new number is " + x * y * z;
+}
+// Output the result to the console.
+console.log("\nMultiply numbers 2, 3, 5 (Arrow function)\n  ", multiplyNumsV2(2, 3, 5));
