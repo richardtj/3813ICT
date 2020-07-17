@@ -20,7 +20,7 @@
     "mdurl": "^1.0.1",
     "mime": "^2.4.6",
     "mustache": "^4.0.1",
-    "npm": "^6.14.5",
+    "npm": "^6.14.6",
     "promised-fs": "^0.1.0",
     "promised-http": "^0.0.2",
     "promised-traits": "^0.0.6",
